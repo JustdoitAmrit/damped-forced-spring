@@ -35,7 +35,7 @@ with col1:
     st.header("Parameters")
     m = st.slider('Mass (m)', 0.1, 100.0, 1.0, format="%.1f", key='mass')
     k = st.slider('Spring Constant (k)', 1, 100000, 1, format="%d", key='spring_constant')
-    c = st.slider('Damping Coefficient (c)', 0.0, 10, 0.0, step=0.05, format="%.2f", key='damping_coefficient')  # Step set to 0.05
+    c = st.slider('Damping Coefficient (c)', 0.0, 10.0, 0.0, step=0.05, format="%.2f", key='damping_coefficient')  # Max value set to 10
     omega = st.slider('Driving Frequency (ω)', 0.1, 10.0, 0.1, format="%.1f", key='frequency')
     P = st.slider('Driving Force (P)', 0, 500, 100, format="%d", key='driving_force')
 
